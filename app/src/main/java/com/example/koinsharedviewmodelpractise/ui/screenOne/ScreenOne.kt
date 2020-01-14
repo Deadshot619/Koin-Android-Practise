@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import com.example.koinsharedviewmodelpractise.R
 import com.example.koinsharedviewmodelpractise.databinding.ScreenOneFragmentBinding
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class ScreenOne : Fragment() {
 
@@ -17,11 +17,13 @@ class ScreenOne : Fragment() {
     private lateinit var binding: ScreenOneFragmentBinding
 
     //Lazily Initialize viewModel using Koin
-    private val viewModel: ScreenOneViewModel by /*viewModel()*/ lazy {
+    private val viewModel: ScreenOneViewModel by sharedViewModel()
+    //The following method is used to define a sharedViewModel
+    /*lazy {
         activity?.run {
             ViewModelProviders.of(this).get(ScreenOneViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
-    }
+    }*/
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

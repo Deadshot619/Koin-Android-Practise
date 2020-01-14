@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Koin-Android-Practise.iml" filepath="$PROJECT_DIR$/Koin-Android-Practise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Koin-Android-Practise-KoinSharedViewModelPractise.iml" filepath="$PROJECT_DIR$/Koin-Android-Practise-KoinSharedViewModelPractise.iml" />
       <module fileurl="file://$PROJECT_DIR$/KoinSharedViewModelPractise.iml" filepath="$PROJECT_DIR$/KoinSharedViewModelPractise.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
