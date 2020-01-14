@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_flow"
+    app:startDestination="@id/screenOne">
+
+    <fragment
+        android:id="@+id/screenOne"
+        android:name="com.example.koinsharedviewmodelpractise.ui.screenOne.ScreenOne"
+        android:label="ScreenOne">
+        <action
+            android:id="@+id/action_screenOne_to_screenTwoFragment"
+            app:destination="@id/screenTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenTwoFragment"
+        android:name="com.example.koinsharedviewmodelpractise.ui.screenTwo.ScreenTwoFragment"
+        android:label="ScreenTwoFragment" />
+</navigation>

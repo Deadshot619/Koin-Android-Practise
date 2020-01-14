@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.koinsharedviewmodelpractise.ui.screenOne.ScreenOneViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.screenTwo.ScreenTwoFragment">
+
+        <TextView
+            android:id="@+id/tv_first_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:text="@{viewModel.firstName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="First Name" />
+
+        <TextView
+            android:id="@+id/tv_last_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@{viewModel.lastName}"
+            app:layout_constraintEnd_toEndOf="@+id/tv_first_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_first_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_first_name"
+            tools:text="Last Name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="TEST"
+            app:layout_constraintEnd_toEndOf="@+id/tv_last_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_last_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_last_name"
+            tools:text="TEST" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
